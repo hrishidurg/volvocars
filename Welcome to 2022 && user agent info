@@ -1,0 +1,19 @@
+#Explanation:
+#The script defines a main() function that prints the welcome message and calls the get_user_agent() function
+#The get_user_agent() function returns a placeholder user agent string  - https://www.geeksforgeeks.org/http-headers-user-agent/
+
+def main():
+    # Print the welcome message
+    print("Welcome to 2022!")
+
+    # Get the user agent information
+    user_agent = get_user_agent()
+    print(f"User Agent: {user_agent}")
+
+def get_user_agent():
+    # In a real-world scenario, you would extract the user agent from an HTTP request
+    # For demonstration purposes, we'll use a placeholder value
+    return "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+
+if __name__ == "__main__":
+    main()
